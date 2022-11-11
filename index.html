@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Matheus Athayde</h1>
+
+    <div>
+        <p id="resultado"></p>
+
+        <table>
+            <tr>
+                <td><button class="green" onclick="incerir('%')">%</button></td>
+                <td><button class="green" onclick="incerir('/')">/</button></td>
+                <td colspan="2"><button class="double" id="c" onclick=clean()>C</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="incerir(7)">7</button></td>
+                <td><button onclick="incerir(8)">8</button></td>
+                <td><button onclick="incerir(9)">9</button></td>
+                <td><button class="green" onclick="incerir('*')">X</button></td>
+            </tr>
+            
+            <tr>
+                <td><button onclick="incerir(4)">4</button></td>
+                <td><button onclick="incerir(5)">5</button></td>
+                <td><button onclick="incerir(6)">6</button></td>
+                <td><button class="green" onclick="incerir('-')">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="incerir(1)">1</button></td>
+                <td><button onclick="incerir(2)">2</button></td>
+                <td><button onclick="incerir(3)">3</button></td>
+                <td><button class="green" onclick="incerir('+')">+</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button class="double" onclick="incerir(0)">0</button></td>
+                <td><button onclick="incerir('.')">,</button></td>
+                <td><button onclick="resultado()">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
